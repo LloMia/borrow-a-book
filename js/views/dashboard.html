@@ -48,54 +48,12 @@
 
     <script type="text/javascript" src="js/libs/require/require.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <!-- <div class="card" >
-      <a href="#" data-bind="foreach: listOfBooks"></a>
-        <P>Tragedy Drama</p>
-        <p class="title">Othello</p>
-        <p>by William Shakespeare </p>
 
-      </div> -->
 
-      <!-- <div class="card" >
-        <a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/514UJKuVmdL._SX305_BO1,204,203,200_.jpg" alt="John" style="width:100%"></a>
-        <P>Tragedy Drama</p>
-          <p class="title">To Kill A Mockingbird</p>
-          <p>by Harper Lee </p>
-          <p><button>Contact</button></p>
-        </div>
-
-        <div class="card">
-          <a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/51DUJ9xNG0L._SX307_BO1,204,203,200_.jpg" alt="John" style="width:100%"></a>
-          <P>Fantasy</p>
-            <p class="title">Breaking Dawn</p>
-            <p>by Stephenie Meyers </p>
-            <p><button>Contact</button></p>
-          </div>
-
-          <div class="card">
-            <a href="#"><img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/8456431/The_Gunslinger__1988_trade_paperback_.jpg" alt="John" style="width:100%">
-            </a>
-            <P> Adventure</p>
-              <p class="title">The Dark Tower</p>
-              <p>by Stephen  King </p>
-              <p><button>Contact</button></p>
-            </div>
-
-            <div class="card">
-              <a  href="#">
-                <img src="https://hpmedia.bloomsbury.com/rep/s/978%201408855928_309033.jpeg" alt="John" style="width:100%">
-              </a>
-              <P> Fantasy</p>
-                <p class="title">Harry Potter And The Cursed Child</p>
-                <p>by  J.K Rowling </p>
-                <p><button>Contact</button></p>
-              </div>
-      <script type="text/javascript" src="js/index.js"></script> -->
-
-      <div class="" data-bind="visible : !loggedIn()">
+      <div style="text-align : center;" data-bind="visible : !loggedIn()">
           <h1>login</h1>
-          <input type="text" name="" value="" placeholder="Username" data-bind="textInput: username" >
-          <button type="button" name="button" data-bind="click: login" >Login</button>
+          <input type="text" name="" value="" placeholder="Username" data-bind="textInput: username" ><br><br>
+          <button type="button" name="button" data-bind="click: login" style="width: 10%">Login</button>
       </div>
       <div class="" data-bind="visible : loggedIn()">
           <h1 data-bind="text: message" ></h1>

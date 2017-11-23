@@ -35,6 +35,13 @@
 
       height: 30;
     }
+    #ttl {
+  display: block;
+  /*width: 100px;*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 
     </style>
@@ -47,8 +54,8 @@
           <div class="card book">
               <a>  <img  data-bind="attr:{src: $data.Image}" alt="John" style="width:100%"/></a>
               <p data-bind="text : $data.Genre"></p>
-              <p class = "title" data-bind="text : $data.Title"></p>
-              <p data-bind="text : $data.Author"></p>
+              <p class = "title" data-bind="text : $data.Title" id="ttl"></p>
+              <p data-bind="text : $data.Author" id="ttl"></p>
 
               <button type="button" name="button" data-bind="visible : !borrowed(), click: $parent.borrowBook" >Borrow</button>
               <button type="button" name="button" data-bind="visible : borrowed(), click: $parent.returnBook" >Return</button>
